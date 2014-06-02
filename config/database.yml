@@ -28,9 +28,7 @@ test:
   database: db/test.sqlite3
 
 production:
-  <<: *default
-  database: db/test.sqlite3
-#  adapter: mysql2
+  adapter: mysql2
 #  encoding: ujis
 #  reconnect: true
 #  database: heroku_685684303d53701
