@@ -29,8 +29,8 @@ test:
 
 production:
   adapter: mysql2
-  encoding: ujis
-#  reconnect: true
+#  encoding: ujis
+  reconnect: true
   database: heroku_685684303d53701
   username: be65cf185a1cc8
   password: 92cf59c5
