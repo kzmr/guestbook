@@ -13,10 +13,10 @@ development:
   adapter: mysql2
 #  encoding: ujis
   reconnect: true
-  database: heroku_685684303d53701
-  username: be65cf185a1cc8
-  password: 92cf59c5
-  host: us-cdbr-east-06.cleardb.net
+  database: guestbook
+  username: gbuser
+  password: pass3125$
+  host: 49.212.132.25
 #  pool: 1
 #  timeout: 5000
 
@@ -31,10 +31,10 @@ staging:
   adapter: mysql2
 #  encoding: ujis
   reconnect: true
-  database: heroku_685684303d53701
-  username: be65cf185a1cc8
-  password: 92cf59c5
-  host: us-cdbr-east-06.cleardb.net
+  database: guestbook
+  username: gbuser
+  password: pass3125$
+  host: 49.212.132.25
 #  pool: 1
 #  timeout: 5000
 
