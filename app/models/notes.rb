@@ -3,6 +3,10 @@ class Notes < ActiveRecord::Base
   #self.table_name = "notes"
   #self.primary_key = :id
 
+  def self.searchNotes
+    self.where('deleted_at = null')
+  end
+
   def self.get_notes
     self.where('deleted_at = null')
   end
