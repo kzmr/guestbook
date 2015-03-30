@@ -7,6 +7,9 @@ Rails.application.routes.draw do
 
   namespace :api do
     get 'note/search' => 'note#search'
+    get 'page/get' => 'page#get'
+    get 'note/create' => 'note#create'
+    get 'page/create' => 'page#create'
   end
 
   # Example of regular route:

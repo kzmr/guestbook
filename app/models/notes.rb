@@ -4,7 +4,7 @@ class Notes < ActiveRecord::Base
   #self.primary_key = :id
 
   def self.searchNotes
-    self.where('deleted_at = null')
+    self.where('deleted_at is null')
   end
 
   def self.get_notes
@@ -13,5 +13,13 @@ class Notes < ActiveRecord::Base
 
   def self.get_note(id)
     self.where('id=?', id).first
+  end
+
+  def self.create(params)
+    note = self.new
+    note.title = params[:title]
+    note.latitude = params[:lat]
+    note.longitude = params[:lng]
+    note.save!
   end
 end

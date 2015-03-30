@@ -14,9 +14,12 @@ development:
 #  encoding: ujis
   reconnect: true
   database: guestbook
-  username: gbuser
-  password: pass3125$
-  host: 49.212.132.25
+#  username: gbuser
+#  password: pass3125$
+#  host: 49.212.132.25
+  username: root
+  password: password
+  host: localhost
 #  pool: 1
 #  timeout: 5000
 
